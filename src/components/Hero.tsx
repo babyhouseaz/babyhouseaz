@@ -29,8 +29,7 @@ export default function Hero() {
           
           <Reveal animation="reveal-left" delay={200}>
             <p className="text-base md:text-lg text-blue-200 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük. Övladlarınızın intellektual
-              və fiziki inkişafını dəstəkləyən zəngin fəaliyyətlər ilə dopdolu gün.
+              Övladlarınızı ən müasir məktəbəqədər təhsil proqramı ilə gələcəyə, 1-ci sinfə tam hazır və özgüvənli şəkildə yola salırıq. İntellektual və fiziki inkişafı dəstəkləyən zəngin fəaliyyətlərlə dopdolu bir mühit.
             </p>
           </Reveal>
           

@@ -101,8 +101,8 @@ export default function Navbar() {
         </nav>
         
         <div className="flex flex-col items-center gap-6 mt-8">
-          <p className="text-slate-500 font-medium italic text-lg px-8 text-center">
-            Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük.
+          <p className="text-slate-500 font-medium italic text-lg px-8 text-center leading-relaxed">
+            Ən müasir məktəbəqədər təhsil proqramı ilə övladlarınızı gələcəyə hazırlayırıq.
           </p>
 
           <a href="https://www.instagram.com/babyhouse_az/" target="_blank" rel="noopener noreferrer" className="text-[#ff4d85] p-4 bg-pink-50 rounded-full hover:scale-110 transition-transform">
