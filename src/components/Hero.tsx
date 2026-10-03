@@ -13,46 +13,59 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
 
         {/* Text */}
-        <div className="text-white animate-fade-up text-center lg:text-left">
-          <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold mb-4 leading-tight">
-            BabyHouse <br />
-            <span className="text-[#ffcc00]">Uşaq Bağçası</span>
-          </h1>
-          <p className="text-xl md:text-2xl font-bold text-blue-100 mb-4">
-            Kiçik addımlar, böyük gələcək!
-          </p>
-          <p className="text-base md:text-lg text-blue-200 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük. Övladlarınızın intellektual
-            və fiziki inkişafını dəstəkləyən zəngin fəaliyyətlər ilə dopdolu gün.
-          </p>
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-            <Link
-              href="/#haqqimizda"
-              className="bg-[#ffcc00] hover:bg-yellow-400 text-slate-800 px-8 py-4 rounded-full font-extrabold text-base transition-all hover:scale-105 shadow-lg"
-            >
-              Daha Ətraflı
-            </Link>
-            <Link
-              href="/elaqe"
-              className="bg-white/20 hover:bg-white/30 text-white border border-white/40 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105"
-            >
-              Bizimlə Əlaqə
-            </Link>
-          </div>
+        <div className="text-center lg:text-left z-10 relative">
+          <Reveal animation="reveal-left">
+            <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold mb-4 leading-tight text-white">
+              BabyHouse <br />
+              <span className="text-[#ffcc00]">Uşaq Bağçası</span>
+            </h1>
+          </Reveal>
+          
+          <Reveal animation="reveal-left" delay={100}>
+            <p className="text-xl md:text-2xl font-bold text-blue-100 mb-4">
+              Kiçik addımlar, böyük gələcək!
+            </p>
+          </Reveal>
+          
+          <Reveal animation="reveal-left" delay={200}>
+            <p className="text-base md:text-lg text-blue-200 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük. Övladlarınızın intellektual
+              və fiziki inkişafını dəstəkləyən zəngin fəaliyyətlər ilə dopdolu gün.
+            </p>
+          </Reveal>
+          
+          <Reveal animation="reveal-left" delay={300}>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+              <Link
+                href="/#haqqimizda"
+                className="bg-[#ffcc00] hover:bg-yellow-400 text-slate-800 px-8 py-4 rounded-full font-extrabold text-base transition-all hover:scale-105 shadow-lg"
+              >
+                Daha Ətraflı
+              </Link>
+              <Link
+                href="/elaqe"
+                className="bg-white/20 hover:bg-white/30 text-white border border-white/40 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105"
+              >
+                Bizimlə Əlaqə
+              </Link>
+            </div>
+          </Reveal>
 
           {/* Quick stats */}
-          <div className="flex justify-center lg:justify-start gap-8 mt-12">
-            {[
-              { val: "08:00", label: "Açılış saatı" },
-              { val: "19:00", label: "Bağlanış saatı" },
-              { val: "24/7",  label: "Kamera müşahidəsi" },
-            ].map((s, i) => (
-              <div key={i} className="text-center lg:text-left">
-                <p className="text-3xl font-extrabold text-[#ffcc00]">{s.val}</p>
-                <p className="text-blue-200 text-sm mt-1">{s.label}</p>
-              </div>
-            ))}
-          </div>
+          <Reveal animation="reveal-scale" delay={400}>
+            <div className="flex justify-center lg:justify-start gap-8 mt-12">
+              {[
+                { val: "08:00", label: "Açılış saatı" },
+                { val: "19:00", label: "Bağlanış saatı" },
+                { val: "24/7",  label: "Kamera müşahidəsi" },
+              ].map((s, i) => (
+                <div key={i} className="text-center lg:text-left">
+                  <p className="text-3xl font-extrabold text-[#ffcc00]">{s.val}</p>
+                  <p className="text-blue-200 text-sm mt-1">{s.label}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
 
         {/* Image */}

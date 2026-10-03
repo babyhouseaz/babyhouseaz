@@ -66,8 +66,8 @@ export default function ContactPage() {
             </Reveal>
 
             {/* Map */}
-            <Reveal delay={200} animation="reveal-right">
-              <div className="bg-slate-200 rounded-[40px] shadow-2xl h-[400px] md:h-full overflow-hidden w-full relative">
+            <Reveal delay={200} animation="reveal-right" className="h-[400px] md:h-full w-full">
+              <div className="bg-slate-200 rounded-[40px] shadow-2xl h-full overflow-hidden w-full relative">
                 <iframe
                   title="Baby House Xəritə"
                   src="https://maps.google.com/maps?q=40.41507339477539,49.828948974609375&hl=tr&z=17&output=embed"

@@ -30,8 +30,8 @@ export default function Navbar() {
         }`}
       >
         <div
-          className={`w-max mx-auto backdrop-blur rounded-full px-4 flex justify-between items-center gap-4 md:gap-6 transition-all duration-300 ${
-            scrolled ? "bg-white/95 py-1.5 shadow-md" : "bg-white/80 py-2 shadow-sm"
+          className={`w-max mx-auto backdrop-blur-xl rounded-full px-4 flex justify-between items-center gap-4 md:gap-6 transition-all duration-300 ${
+            scrolled ? "bg-white py-1.5 shadow-lg" : "bg-white/95 py-2 shadow-md"
           }`}
         >
           {/* Logo */}
@@ -88,7 +88,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-white/95 backdrop-blur-md z-40 flex flex-col justify-center items-center gap-8 transition-all duration-500 ease-in-out md:hidden ${
+        className={`fixed inset-0 bg-white z-40 flex flex-col justify-center items-center gap-8 transition-all duration-500 ease-in-out md:hidden ${
           menuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         }`}
       >
