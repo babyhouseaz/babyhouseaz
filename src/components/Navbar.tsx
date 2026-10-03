@@ -2,6 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { Fredoka } from "next/font/google";
+
+const fredoka = Fredoka({ subsets: ["latin"], weight: ["600", "700"] });
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,7 +44,7 @@ export default function Navbar() {
               className="object-contain transition-transform group-hover:scale-105"
               priority
             />
-            <span className="md:hidden font-extrabold text-[20px] mt-1 tracking-tight">
+            <span className={`md:hidden font-extrabold text-[22px] mt-1 tracking-tight ${fredoka.className}`}>
               <span className="text-[#4B4EFC]">Baby</span><span className="text-[#ff4d85]">House</span>
             </span>
           </a>

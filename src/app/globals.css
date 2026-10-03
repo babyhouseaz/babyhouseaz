@@ -10,24 +10,24 @@
 
 /* ── Scroll-triggered fade-in ── */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); filter: blur(10px); }
-  to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 @keyframes fadeIn {
-  from { opacity: 0; filter: blur(10px); }
-  to   { opacity: 1; filter: blur(0); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 @keyframes slideLeft {
-  from { opacity: 0; transform: translateX(-50px); filter: blur(10px); }
-  to   { opacity: 1; transform: translateX(0); filter: blur(0); }
+  from { opacity: 0; transform: translateX(-50px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 @keyframes slideRight {
-  from { opacity: 0; transform: translateX(50px); filter: blur(10px); }
-  to   { opacity: 1; transform: translateX(0); filter: blur(0); }
+  from { opacity: 0; transform: translateX(50px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 @keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.85); filter: blur(10px); }
-  to   { opacity: 1; transform: scale(1); filter: blur(0); }
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
 .animate-fade-up {
@@ -73,46 +73,38 @@
 .reveal {
   opacity: 0;
   transform: translateY(40px);
-  filter: blur(10px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), filter 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
-  filter: blur(0);
 }
 .reveal-left {
   opacity: 0;
   transform: translateX(-50px);
-  filter: blur(10px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), filter 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reveal-left.visible {
   opacity: 1;
   transform: translateX(0);
-  filter: blur(0);
 }
 .reveal-right {
   opacity: 0;
   transform: translateX(50px);
-  filter: blur(10px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), filter 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reveal-right.visible {
   opacity: 1;
   transform: translateX(0);
-  filter: blur(0);
 }
 .reveal-scale {
   opacity: 0;
   transform: scale(0.85);
-  filter: blur(10px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), filter 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reveal-scale.visible {
   opacity: 1;
   transform: scale(1);
-  filter: blur(0);
 }
 
 .shape-blob {
