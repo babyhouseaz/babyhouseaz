@@ -6,22 +6,22 @@ export default function Teachers() {
     {
       role: "Baş Müəllim",
       color: "#4B4EFC",
-      image: "https://i.ibb.co/Pz9w1NN1/teacher1.jpg",
+      image: "/Bas.jpeg",
     },
     {
       role: "Loqoped",
       color: "#ff4d85",
-      image: "https://i.ibb.co/Xf5bqcxK/teacher2.jpg",
+      image: "/Loqoped.jpeg",
     },
     {
       role: "Uşaq Psixoloqu",
       color: "#00cc66",
-      image: "https://i.ibb.co/Hf9z0bym/teacher3.jpg",
+      image: "/Psxiloq.jpeg",
     },
     {
       role: "Dayə",
       color: "#ffcc00",
-      image: "https://i.ibb.co/6JqCrrP7/teacher4.jpg",
+      image: "/DayeX.jpeg",
     },
   ];
 

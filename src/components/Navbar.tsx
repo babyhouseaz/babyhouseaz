@@ -27,7 +27,7 @@ export default function Navbar() {
         }`}
       >
         <div
-          className={`max-w-4xl mx-auto backdrop-blur rounded-full px-4 flex justify-between items-center transition-all duration-300 ${
+          className={`w-max mx-auto backdrop-blur rounded-full px-4 flex justify-between items-center gap-4 md:gap-6 transition-all duration-300 ${
             scrolled ? "bg-white/95 py-1.5 shadow-md" : "bg-white/80 py-2 shadow-sm"
           }`}
         >
@@ -36,12 +36,12 @@ export default function Navbar() {
             <Image
               src="/Logo.png"
               alt="BabyHouse Logo"
-              width={75}
-              height={35}
+              width={70}
+              height={30}
               className="object-contain transition-transform group-hover:scale-105"
               priority
             />
-            <span className="md:hidden font-extrabold text-[22px] mt-1 tracking-tight">
+            <span className="md:hidden font-extrabold text-[20px] mt-1 tracking-tight">
               <span className="text-[#4B4EFC]">Baby</span><span className="text-[#ff4d85]">House</span>
             </span>
           </a>

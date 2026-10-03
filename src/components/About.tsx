@@ -17,10 +17,10 @@ export default function About() {
         {/* Images Grid */}
         <div className="relative h-[600px] w-full hidden md:block">
           <Reveal animation="reveal-left" className="absolute top-0 left-0 w-2/3 h-2/3 rounded-3xl overflow-hidden shadow-2xl z-10 hover:scale-105 transition-transform duration-500">
-             <Image src="/Photo3.jpg" alt="About BabyHouse" fill className="object-cover" />
+             <Image src="/About1.jpeg" alt="About BabyHouse" fill className="object-cover" />
           </Reveal>
           <Reveal animation="reveal-scale" delay={200} className="absolute bottom-0 right-0 w-2/3 h-2/3 rounded-3xl overflow-hidden shadow-2xl z-20 hover:scale-105 transition-transform duration-500 border-8 border-white">
-             <Image src="/Photo1.jpg" alt="About BabyHouse" fill className="object-cover" />
+             <Image src="/About2.jpeg" alt="About BabyHouse" fill className="object-cover" />
           </Reveal>
           <Reveal animation="reveal" delay={400} className="absolute top-1/4 right-0 bg-white p-4 rounded-2xl shadow-xl z-30 flex items-center gap-4 hover:-translate-y-2 transition-transform duration-300">
             <div className="w-14 h-14 rounded-full bg-[#ffcc00]/20 flex items-center justify-center text-[#ffcc00]">
