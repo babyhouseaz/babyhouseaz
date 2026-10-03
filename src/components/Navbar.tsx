@@ -92,7 +92,7 @@ export default function Navbar() {
           menuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         }`}
       >
-        <nav className="flex flex-col gap-8 text-center font-extrabold text-slate-800 text-3xl mb-12">
+        <nav className="flex flex-col gap-6 text-center font-extrabold text-slate-800 text-2xl mb-8">
           <Link href="/#haqqimizda" onClick={() => setMenuOpen(false)}>Haqqımızda</Link>
           <Link href="/#dernekler" onClick={() => setMenuOpen(false)}>Dərnəklər</Link>
           <Link href="/#xidmetler" onClick={() => setMenuOpen(false)}>Xidmətlər</Link>
@@ -100,8 +100,8 @@ export default function Navbar() {
           <Link href="/elaqe" onClick={() => setMenuOpen(false)}>Əlaqə</Link>
         </nav>
         
-        <div className="flex flex-col items-center gap-6 mt-8">
-          <p className="text-slate-500 font-medium italic text-lg px-8 text-center leading-relaxed">
+        <div className="flex flex-col items-center gap-6 mt-4">
+          <p className="text-slate-500 font-medium italic text-base px-10 text-center leading-relaxed">
             Ən müasir məktəbəqədər təhsil proqramı ilə övladlarınızı gələcəyə hazırlayırıq.
           </p>
 
