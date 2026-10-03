@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import Image from "next/image";
 
 export default function EducationDetails() {
   return (
@@ -20,8 +21,8 @@ export default function EducationDetails() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* İlkin Savad Təlimi */}
           <Reveal animation="reveal-left" delay={100} className="bg-white rounded-[30px] p-8 shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-[#ff4d85]">
-            <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center text-[#ff4d85] mb-6">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+            <div className="relative w-20 h-20 mb-6 rounded-2xl overflow-hidden shadow-md">
+              <Image src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=400&auto=format&fit=crop" alt="İlkin Savad Təlimi" fill className="object-cover" />
             </div>
             <h3 className="text-2xl font-extrabold text-slate-800 mb-5">İlkin Savad Təlimi</h3>
             <ul className="space-y-4 text-slate-600 font-medium">
@@ -48,8 +49,8 @@ export default function EducationDetails() {
 
           {/* Məntiq və Riyaziyyat */}
           <Reveal animation="reveal-scale" delay={200} className="bg-white rounded-[30px] p-8 shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-[#4B4EFC]">
-            <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-[#4B4EFC] mb-6">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185zM9.75 9h.008v.008H9.75V9zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm4.125 4.5h.008v.008h-.008V13.5zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg>
+            <div className="relative w-20 h-20 mb-6 rounded-2xl overflow-hidden shadow-md">
+              <Image src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?q=80&w=400&auto=format&fit=crop" alt="Məntiq və Riyaziyyat" fill className="object-cover" />
             </div>
             <h3 className="text-2xl font-extrabold text-slate-800 mb-5">Məntiq və Riyaziyyat</h3>
             <ul className="space-y-4 text-slate-600 font-medium">
@@ -76,8 +77,8 @@ export default function EducationDetails() {
 
           {/* Musiqi Bölümü */}
           <Reveal animation="reveal-right" delay={300} className="bg-white rounded-[30px] p-8 shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-[#00cc66]">
-            <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-[#00cc66] mb-6">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 19.5V15m6 4.5v-4.5M9 7.5l3-3m0 0l3 3m-3-3v10.5" /></svg>
+            <div className="relative w-20 h-20 mb-6 rounded-2xl overflow-hidden shadow-md">
+              <Image src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=400&auto=format&fit=crop" alt="Musiqi Bölümü" fill className="object-cover" />
             </div>
             <h3 className="text-2xl font-extrabold text-slate-800 mb-5">Musiqi Bölümü</h3>
             <ul className="space-y-4 text-slate-600 font-medium">
