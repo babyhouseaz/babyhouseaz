@@ -19,14 +19,12 @@ const faqs = [
     a: "Bəli. Bağçamızda peşəkar loqoped, defektoloq və psixoloq xidməti mövcuddur. Xüsusi ehtiyacı olan uşaqlar üçün fərdi inkişaf və korreksiya proqramı tətbiq edilir.",
   },
   {
-    q: "2026–2027 tədris ili üçün qeydiyyat açıqdırmı?",
-    a: "Xeyr. 2026–2027-ci tədris ili üçün dövlət dəstəyi ilə qəbul yerlərimiz dolmuşdur. Gələcək qeydiyyat dövrləri haqqında məlumat almaq üçün bizimlə əlaqə saxlayın.",
-  },
-  {
     q: "Servis xidməti mövcuddurmu?",
     a: "Bəli. Uşaqların bağçaya təhlükəsiz gediş-gəlişini təmin edən xüsusi nəqliyyat xidmətimiz mövcuddur.",
   },
 ];
+
+import Reveal from "./Reveal";
 
 export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
@@ -34,17 +32,18 @@ export default function FAQ() {
   return (
     <section className="py-20 px-4 bg-slate-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-14">
+        <Reveal className="text-center mb-14">
           <p className="text-[#4B4EFC] font-bold uppercase tracking-wider text-sm mb-2">FAQ</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800">
             Tez-Tez Verilən <span className="text-[#ff4d85]">Suallar</span>
           </h2>
-        </div>
+        </Reveal>
 
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((item, i) => (
-            <div
+            <Reveal
               key={i}
+              delay={i * 100}
               className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
             >
               <button
@@ -65,7 +64,7 @@ export default function FAQ() {
                   {item.a}
                 </div>
               )}
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
