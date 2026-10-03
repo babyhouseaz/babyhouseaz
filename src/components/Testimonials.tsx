@@ -28,20 +28,20 @@ export default function Testimonials() {
                 <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-[#ff4d85] to-transparent z-10 pointer-events-none" />
                 <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-[#ff4d85] to-transparent z-10 pointer-events-none" />
                 
-                <div className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused] focus:[animation-play-state:paused] active:[animation-play-state:paused]">
+                <div className="flex gap-4 md:gap-6 w-max animate-marquee hover:[animation-play-state:paused] active:[animation-play-state:paused] focus-within:[animation-play-state:paused] touch-pan-y">
                 {[...reviews, ...reviews].map((r, i) => (
-                  <div key={i} className="bg-white rounded-3xl p-6 shadow-xl w-[320px] md:w-[400px] shrink-0">
-                    <svg className="w-8 h-8 text-[#ff4d85] mb-3" fill="currentColor" viewBox="0 0 24 24">
+                  <div key={i} className="bg-white rounded-3xl p-5 md:p-6 shadow-xl w-[260px] md:w-[400px] shrink-0 whitespace-normal">
+                    <svg className="w-6 h-6 md:w-8 md:h-8 text-[#ff4d85] mb-2 md:mb-3" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                     </svg>
-                    <p className="text-slate-600 text-sm leading-relaxed mb-4 italic whitespace-normal">{r.text}</p>
+                    <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-4 italic">{r.text}</p>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-[#ff4d85] font-extrabold text-sm shrink-0">
+                      <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-pink-100 flex items-center justify-center text-[#ff4d85] font-extrabold text-xs md:text-sm shrink-0">
                         {r.name[0]}
                       </div>
                       <div>
-                        <p className="font-bold text-slate-800 text-sm">{r.name}</p>
-                        <p className="text-slate-400 text-xs">BabyHouse Valideyn</p>
+                        <p className="font-bold text-slate-800 text-xs md:text-sm">{r.name}</p>
+                        <p className="text-slate-400 text-[10px] md:text-xs">BabyHouse Valideyn</p>
                       </div>
                     </div>
                   </div>

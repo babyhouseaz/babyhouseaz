@@ -65,14 +65,20 @@ export default function ContactPage() {
               </div>
             </Reveal>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <Reveal delay={200} animation="reveal-right">
-              <div className="bg-slate-800 rounded-[40px] shadow-2xl h-[400px] md:h-full flex flex-col items-center justify-center border-4 border-dashed border-slate-600 group hover:border-[#ff4d85] transition-colors p-8 text-center cursor-pointer">
-                <svg className="w-20 h-20 text-slate-600 mb-4 group-hover:text-[#ff4d85] transition-colors" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
-                </svg>
-                <h3 className="text-2xl font-bold text-slate-400 group-hover:text-white transition-colors">Xəritə əlavə olunacaq</h3>
-                <p className="text-slate-500 mt-2">Bura Google Maps və ya başqa bir xəritə pəncərəsi daxil edə bilərsiniz.</p>
+              <div className="bg-slate-200 rounded-[40px] shadow-2xl h-[400px] md:h-full overflow-hidden w-full relative">
+                <iframe
+                  title="Baby House Xəritə"
+                  src="https://maps.google.com/maps?q=40.41507339477539,49.828948974609375&hl=tr&z=17&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute top-0 left-0 w-full h-full"
+                ></iframe>
               </div>
             </Reveal>
           </div>
