@@ -19,16 +19,16 @@ export default function Navbar() {
 
         {/* Links */}
         <nav className="hidden md:flex gap-7 font-extrabold text-slate-700 text-lg">
-          <Link href="#haqqimizda" className="hover:text-[#4B4EFC] transition-colors">Haqqımızda</Link>
-          <Link href="#xidmetler"  className="hover:text-[#4B4EFC] transition-colors">Xidmətlər</Link>
-          <Link href="#tedris"     className="hover:text-[#4B4EFC] transition-colors">Tədris Proqramı</Link>
-          <Link href="#video"      className="hover:text-[#4B4EFC] transition-colors">Video</Link>
-          <Link href="#elaqe"      className="hover:text-[#4B4EFC] transition-colors">Əlaqə</Link>
+          <Link href="/#haqqimizda" className="hover:text-[#4B4EFC] transition-colors">Haqqımızda</Link>
+          <Link href="/#xidmetler"  className="hover:text-[#4B4EFC] transition-colors">Xidmətlər</Link>
+          <Link href="/#tedris"     className="hover:text-[#4B4EFC] transition-colors">Tədris Proqramı</Link>
+          <Link href="/#video"      className="hover:text-[#4B4EFC] transition-colors">Video</Link>
+          <Link href="/elaqe"      className="hover:text-[#4B4EFC] transition-colors">Əlaqə</Link>
         </nav>
 
         {/* CTA */}
         <Link
-          href="#elaqe"
+          href="/elaqe"
           className="bg-[#ff4d85] hover:bg-pink-600 text-white px-5 py-1.5 rounded-full font-extrabold text-lg transition-all hover:scale-105 shadow-md"
         >
           Bizimlə Əlaqə

@@ -27,13 +27,13 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
-              href="#haqqimizda"
+              href="/#haqqimizda"
               className="bg-[#ffcc00] hover:bg-yellow-400 text-slate-800 px-8 py-4 rounded-full font-extrabold text-base transition-all hover:scale-105 shadow-lg"
             >
               Daha Ətraflı
             </Link>
             <Link
-              href="#elaqe"
+              href="/elaqe"
               className="bg-white/20 hover:bg-white/30 text-white border border-white/40 px-8 py-4 rounded-full font-bold text-base transition-all hover:scale-105"
             >
               Bizimlə Əlaqə

@@ -62,10 +62,10 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4">Keçidlər</h4>
             <ul className="space-y-2 text-sm">
               {[
-                { href: "#haqqimizda", label: "Haqqımızda" },
-                { href: "#xidmetler",  label: "Xidmətlər" },
-                { href: "#tedris",     label: "Tədris Proqramı" },
-                { href: "#video",      label: "Video" },
+                { href: "/#haqqimizda", label: "Haqqımızda" },
+                { href: "/#xidmetler",  label: "Xidmətlər" },
+                { href: "/#tedris",     label: "Tədris Proqramı" },
+                { href: "/#video",      label: "Video" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="hover:text-white transition-colors">{l.label}</Link>
