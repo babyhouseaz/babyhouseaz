@@ -5,8 +5,9 @@ import "./globals.css";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Padora School - Kindergarten",
-  description: "Welcome to Padora School",
+  title: "BabyHouse Uşaq Bağçası – Kiçik addımlar, böyük gələcək!",
+  description:
+    "Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük. BabyHouse olaraq məqsədimiz övladlarınızın həm sevgi, qayğı və diqqətlə əhatə olunduğu bir mühitdə böyüməsini təmin etməkdir.",
 };
 
 export default function RootLayout({
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="az">
       <body className={`${nunito.className} antialiased bg-slate-50 text-slate-800`}>
         {children}
       </body>

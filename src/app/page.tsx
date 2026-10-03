@@ -6,7 +6,6 @@ import VideoSection from "@/components/VideoSection";
 import Stats from "@/components/Stats";
 import Teachers from "@/components/Teachers";
 import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
@@ -21,7 +20,6 @@ export default function Home() {
       <Stats />
       <Teachers />
       <Testimonials />
-      <Pricing />
       <FAQ />
       <Footer />
     </main>

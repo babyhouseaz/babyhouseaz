@@ -1,73 +1,104 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 pt-20 pb-8 px-4 mt-10 rounded-t-[60px]">
+    <footer className="bg-slate-900 text-slate-300 pt-32 pb-8 px-4 mt-10 rounded-t-[60px]">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* CTA Banner */}
-        <div className="bg-[#4B4EFC] rounded-3xl p-10 md:p-14 flex flex-col md:flex-row justify-between items-center gap-8 mb-16 -mt-32 shadow-2xl">
+        <div id="elaqe" className="bg-[#4B4EFC] rounded-3xl p-10 md:p-14 flex flex-col md:flex-row justify-between items-center gap-8 -mt-52 shadow-2xl mb-16">
           <div>
             <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-2">
-              Ready to Join Padora?
+              Əlaqə Saxlayın
             </h3>
-            <p className="text-blue-200 text-lg">Give your child the best start in life.</p>
+            <p className="text-blue-200 text-base">Gələcək qeydiyyat dövrü üçün məlumat alın.</p>
           </div>
-          <button className="bg-[#ffcc00] text-slate-800 font-bold px-10 py-4 rounded-full text-lg hover:scale-105 transition-transform shadow-lg whitespace-nowrap">
-            Enroll Now
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="tel:+994553776710"
+              className="bg-[#ffcc00] text-slate-800 font-extrabold px-8 py-4 rounded-full text-base hover:scale-105 transition-transform shadow-lg whitespace-nowrap flex items-center gap-2"
+            >
+              📞 +994 (55) 377 67 10
+            </a>
+            <a
+              href="https://www.instagram.com/babyhouse_az/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/20 text-white border border-white/30 font-bold px-8 py-4 rounded-full text-base hover:scale-105 transition-transform whitespace-nowrap flex items-center gap-2"
+            >
+              📸 Instagram
+            </a>
+          </div>
         </div>
 
         {/* Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center text-white font-bold">P</div>
-              <span className="text-xl font-extrabold text-white">Padora</span>
-            </div>
+            <Image
+              src="/Logo.png"
+              alt="BabyHouse Logo"
+              width={140}
+              height={70}
+              className="object-contain mb-4 brightness-0 invert opacity-90"
+            />
             <p className="text-sm leading-relaxed text-slate-400">
-              A nurturing environment where children explore, learn, and grow every day.
+              Kiçik addımlar, böyük gələcək. Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Links */}
           <div>
-            <h4 className="font-bold text-white mb-4">Quick Links</h4>
+            <h4 className="font-bold text-white mb-4">Keçidlər</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Classes</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Teachers</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Pricing</Link></li>
+              <li><Link href="#haqqimizda" className="hover:text-white transition-colors">Haqqımızda</Link></li>
+              <li><Link href="#xidmetler" className="hover:text-white transition-colors">Xidmətlər</Link></li>
+              <li><Link href="#tedris" className="hover:text-white transition-colors">Tədris Proqramı</Link></li>
+              <li><Link href="#video" className="hover:text-white transition-colors">Video</Link></li>
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Social */}
           <div>
-            <h4 className="font-bold text-white mb-4">Support</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="#" className="hover:text-white transition-colors">FAQ</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Events</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Blog</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Contact</Link></li>
+            <h4 className="font-bold text-white mb-4">Sosial Media</h4>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <a
+                  href="https://www.instagram.com/babyhouse_az/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <span className="text-lg">📸</span> @babyhouse_az
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@babyhouse_usaqbagcasi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <span className="text-lg">🎵</span> @babyhouse_usaqbagcasi
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-white mb-4">Contact Us</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-2">
-                <span>📍</span>
-                <span>123 Sunshine Street, Baku, Azerbaijan</span>
-              </li>
+            <h4 className="font-bold text-white mb-4">Əlaqə</h4>
+            <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <span>📞</span>
-                <span>+994 50 000 00 00</span>
+                <a href="tel:+994553776710" className="hover:text-white transition-colors">
+                  +994 (55) 377 67 10
+                </a>
               </li>
               <li className="flex items-start gap-2">
-                <span>✉️</span>
-                <span>hello@padoraschool.com</span>
+                <span>📍</span>
+                <span>Cəfər Xəndan küçəsi 20 (və ya 24/2D), Bakı, Azərbaycan</span>
               </li>
             </ul>
           </div>
@@ -75,11 +106,8 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Padora School. All rights reserved.</p>
-          <div className="flex gap-4">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
-          </div>
+          <p>© {new Date().getFullYear()} BabyHouse Uşaq Bağçası. Bütün hüquqlar qorunur.</p>
+          <p className="text-slate-600 text-xs">Bakı, Azərbaycan 🇦🇿</p>
         </div>
 
       </div>

@@ -1,33 +1,38 @@
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <div className="w-full absolute top-0 left-0 z-50 p-4">
-      <div className="max-w-7xl mx-auto bg-white rounded-full px-6 py-4 flex justify-between items-center shadow-sm">
+      <div className="max-w-7xl mx-auto bg-white/95 backdrop-blur rounded-full px-6 py-3 flex justify-between items-center shadow-md">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center text-white font-bold">
-            P
-          </div>
-          <span className="text-xl font-extrabold text-slate-800">Padora</span>
-        </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/Logo.png"
+            alt="BabyHouse Logo"
+            width={130}
+            height={60}
+            className="object-contain"
+            priority
+          />
+        </Link>
 
         {/* Links */}
-        <nav className="hidden md:flex gap-6 font-semibold text-slate-600">
-          <Link href="#" className="hover:text-primary transition-colors">About Us</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Classes</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Teacher</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Pricing</Link>
-          <Link href="#" className="hover:text-primary transition-colors">Event</Link>
-          <Link href="#" className="hover:text-primary transition-colors">FAQ</Link>
+        <nav className="hidden md:flex gap-6 font-bold text-slate-600 text-sm">
+          <Link href="#haqqimizda" className="hover:text-[#4B4EFC] transition-colors">Haqqımızda</Link>
+          <Link href="#xidmetler" className="hover:text-[#4B4EFC] transition-colors">Xidmətlər</Link>
+          <Link href="#tedris" className="hover:text-[#4B4EFC] transition-colors">Tədris Proqramı</Link>
+          <Link href="#video" className="hover:text-[#4B4EFC] transition-colors">Video</Link>
+          <Link href="#elaqe" className="hover:text-[#4B4EFC] transition-colors">Əlaqə</Link>
         </nav>
 
-        {/* Button */}
-        <div>
-          <Link href="#" className="bg-green-400 hover:bg-green-500 text-white px-6 py-2 rounded-full font-bold transition-colors">
-            Contact Us
-          </Link>
-        </div>
+        {/* CTA */}
+        <Link
+          href="#elaqe"
+          className="bg-[#ff4d85] hover:bg-pink-600 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all hover:scale-105 shadow-md"
+        >
+          Bizimlə Əlaqə
+        </Link>
       </div>
     </div>
   );

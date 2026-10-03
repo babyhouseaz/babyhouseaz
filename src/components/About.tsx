@@ -1,50 +1,61 @@
 export default function About() {
   return (
-    <section className="py-20 px-4 bg-slate-50">
+    <section id="haqqimizda" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        
+
         {/* Image Placeholder */}
-        <div className="relative w-full h-[500px] flex justify-center items-center">
-          <div className="absolute w-[80%] h-[90%] bg-[#4B4EFC] shape-blob opacity-20"></div>
-          <div className="absolute w-[75%] h-[85%] bg-slate-200 shape-blob-2 flex flex-col justify-center items-center text-slate-400 overflow-hidden shadow-xl">
-             <span className="text-sm font-semibold">Image Placeholder (About Us)</span>
+        <div className="relative w-full h-[480px] flex justify-center items-center order-2 md:order-1">
+          <div className="absolute w-[85%] h-[85%] bg-[#4B4EFC]/10 rounded-[60%_40%_70%_30%/50%_60%_40%_50%]" />
+          <div className="relative z-10 w-[80%] h-[78%] bg-slate-100 rounded-3xl shadow-xl flex flex-col justify-center items-center text-slate-400 gap-2 border-2 border-dashed border-slate-200">
+            <span className="text-5xl">🏡</span>
+            <span className="text-sm font-semibold mt-2">Şəkil yeri (Bağça fotosunu əlavə edin)</span>
           </div>
         </div>
 
         {/* Content */}
-        <div>
-          <p className="text-[#ff4d85] font-bold uppercase tracking-wider text-sm mb-4">About Us</p>
+        <div className="order-1 md:order-2">
+          <p className="text-[#ff4d85] font-bold uppercase tracking-wider text-sm mb-4">Haqqımızda</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800 mb-6 leading-tight">
-            Towards a Smart & <br/> Passionate Generation
+            Sevgi ilə Böyüyən, <br />
+            <span className="text-[#4B4EFC]">İnkişaf Edən Mühit</span>
           </h2>
-          <p className="text-slate-600 mb-8 leading-relaxed text-lg">
-            Padora provides a safe and nurturing environment where children can learn and grow while having fun and making new friends. It is an important stepping stone in a child's education and development, laying the foundation for future success.
+          <p className="text-slate-600 mb-6 leading-relaxed text-base">
+            <strong>BabyHouse</strong> olaraq məqsədimiz, övladlarınızın həm sevgi, qayğı
+            və diqqətlə əhatə olunduğu bir mühitdə böyüməsi, həm də onların intellektual
+            və fiziki inkişafını dəstəkləyən zəngin fəaliyyətlərdə iştirak etməsini
+            təmin etməkdir.
           </p>
 
-          <ul className="space-y-4 mb-10">
-            <li className="flex items-center gap-3">
-              <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-500">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-              </div>
-              <span className="text-slate-700 font-semibold">Promoting positive child development</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-500">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-              </div>
-              <span className="text-slate-700 font-semibold">Always updating the learning curriculum system</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-500">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-              </div>
-              <span className="text-slate-700 font-semibold">Accredited "A" since 2015</span>
-            </li>
+          <ul className="space-y-4 mb-8">
+            {[
+              { icon: "🛡️", text: "Bağçamız 24/7 kamera müşahidəsi altındadır" },
+              { icon: "❤️", text: "Sevgi və qayğı ilə böyüyən isti mühit" },
+              { icon: "🧩", text: "Hərtərəfli inkişaf: əqli, məntiqi, yaradıcı" },
+              { icon: "👨‍⚕️", text: "Peşəkar loqoped, defektoloq və psixoloq dəstəyi" },
+            ].map((item, i) => (
+              <li key={i} className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-xl shrink-0">
+                  {item.icon}
+                </div>
+                <span className="text-slate-700 font-semibold text-sm">{item.text}</span>
+              </li>
+            ))}
           </ul>
 
-          <button className="bg-[#00cc66] hover:bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-lg">
-            Read The Story
-          </button>
+          {/* Registration Notice */}
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+            <div className="flex items-start gap-3">
+              <span className="text-2xl">⚠️</span>
+              <div>
+                <p className="font-extrabold text-amber-800 text-sm mb-1">Qeydiyyat Statusu</p>
+                <p className="text-amber-700 text-sm leading-relaxed">
+                  2026–2027-ci tədris ili üçün dövlət dəstəyi ilə qəbul yerlərimiz
+                  məhdud sayda olduğundan artıq <strong>dolmuşdur</strong> və hazırda
+                  yeni qeydiyyat aparılmır.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
