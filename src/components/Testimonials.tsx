@@ -23,11 +23,12 @@ export default function Testimonials() {
               </h2>
             </Reveal>
 
-            <div className="overflow-hidden group w-full py-4 relative">
-              <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-[#ff4d85] to-transparent z-10 pointer-events-none" />
-              <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-[#ff4d85] to-transparent z-10 pointer-events-none" />
-              
-              <div className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused] focus:[animation-play-state:paused] active:[animation-play-state:paused]">
+            <Reveal delay={200} animation="reveal-scale">
+              <div className="overflow-hidden group w-full py-4 relative">
+                <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-[#ff4d85] to-transparent z-10 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-[#ff4d85] to-transparent z-10 pointer-events-none" />
+                
+                <div className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused] focus:[animation-play-state:paused] active:[animation-play-state:paused]">
                 {[...reviews, ...reviews].map((r, i) => (
                   <div key={i} className="bg-white rounded-3xl p-6 shadow-xl w-[320px] md:w-[400px] shrink-0">
                     <svg className="w-8 h-8 text-[#ff4d85] mb-3" fill="currentColor" viewBox="0 0 24 24">
@@ -47,6 +48,7 @@ export default function Testimonials() {
                 ))}
               </div>
             </div>
+            </Reveal>
           </div>
         </div>
       </div>

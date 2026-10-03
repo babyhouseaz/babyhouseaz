@@ -10,22 +10,22 @@ export default function Hero() {
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-[#ffcc00]/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-[#ff4d85]/10 rounded-full blur-2xl pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto w-full flex flex-col items-center text-center relative z-10">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
 
         {/* Text */}
-        <div className="text-white animate-fade-up flex flex-col items-center">
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+        <div className="text-white animate-fade-up text-center lg:text-left">
+          <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold mb-4 leading-tight">
             BabyHouse <br />
             <span className="text-[#ffcc00]">Uşaq Bağçası</span>
           </h1>
           <p className="text-xl md:text-2xl font-bold text-blue-100 mb-4">
             Kiçik addımlar, böyük gələcək!
           </p>
-          <p className="text-base md:text-lg text-blue-200 mb-8 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-blue-200 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
             Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük. Övladlarınızın intellektual
             və fiziki inkişafını dəstəkləyən zəngin fəaliyyətlər ilə dopdolu gün.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
             <Link
               href="/#haqqimizda"
               className="bg-[#ffcc00] hover:bg-yellow-400 text-slate-800 px-8 py-4 rounded-full font-extrabold text-base transition-all hover:scale-105 shadow-lg"
@@ -41,13 +41,13 @@ export default function Hero() {
           </div>
 
           {/* Quick stats */}
-          <div className="flex justify-center gap-8 mt-12">
+          <div className="flex justify-center lg:justify-start gap-8 mt-12">
             {[
               { val: "08:00", label: "Açılış saatı" },
               { val: "19:00", label: "Bağlanış saatı" },
               { val: "24/7",  label: "Kamera müşahidəsi" },
             ].map((s, i) => (
-              <div key={i} className="text-center">
+              <div key={i} className="text-center lg:text-left">
                 <p className="text-3xl font-extrabold text-[#ffcc00]">{s.val}</p>
                 <p className="text-blue-200 text-sm mt-1">{s.label}</p>
               </div>
@@ -55,6 +55,27 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Image */}
+        <Reveal animation="reveal-right" className="hidden lg:flex justify-end relative h-[500px] w-full">
+          <div className="relative w-full h-full rounded-[40px] overflow-hidden border-8 border-white/20 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+             <Image 
+                src="https://i.ibb.co/zHFk3xVY/1b745bc55b29.jpg" 
+                alt="BabyHouse Uşaq Bağçası" 
+                fill 
+                className="object-cover"
+                priority
+             />
+          </div>
+          <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-fade-up delay-300">
+            <div className="w-12 h-12 rounded-full bg-[#ff4d85]/10 flex items-center justify-center text-[#ff4d85]">
+               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <div>
+               <p className="font-extrabold text-slate-800">Sevgi Dolu</p>
+               <p className="text-sm text-slate-500">Təhlükəsiz Mühit</p>
+            </div>
+          </div>
+        </Reveal>
       </div>
 
       {/* Wave */}

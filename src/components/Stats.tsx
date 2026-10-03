@@ -22,22 +22,28 @@ export default function Stats() {
                 Uşaqlarınızın parlaq gələcəyi üçün fərqli tədris dillərində bölmələrimiz fəaliyyət göstərir.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="bg-yellow-50 border-2 border-[#f59e0b] rounded-2xl p-5 text-center relative overflow-hidden group">
-                  <div className="absolute top-0 right-0 bg-[#f59e0b] text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">
-                    ⭐ Özəl
+                <Reveal delay={100} animation="reveal-scale">
+                  <div className="bg-yellow-50 border-2 border-[#f59e0b] rounded-2xl p-5 text-center relative overflow-hidden group h-full">
+                    <div className="absolute top-0 right-0 bg-[#f59e0b] text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">
+                      ⭐ Özəl
+                    </div>
+                    <p className="text-xl font-extrabold text-[#f59e0b] mb-2 mt-2 group-hover:scale-105 transition-transform">Azərbaycan Bölməsi</p>
+                    <p className="text-slate-600 text-sm font-semibold">Dövlət Dəstəyi ilə</p>
+                    <p className="text-[#f59e0b] text-xs font-bold mt-1">70% Güzəşt (Endirim)</p>
                   </div>
-                  <p className="text-xl font-extrabold text-[#f59e0b] mb-2 mt-2">Azərbaycan Bölməsi</p>
-                  <p className="text-slate-600 text-sm font-semibold">Dövlət Dəstəyi ilə</p>
-                  <p className="text-[#f59e0b] text-xs font-bold mt-1">70% Güzəşt (Endirim)</p>
-                </div>
-                <div className="bg-blue-50 border border-blue-100 rounded-2xl p-5 text-center flex flex-col justify-center">
-                  <p className="text-xl font-extrabold text-[#4B4EFC] mb-1">Rus Bölməsi</p>
-                  <p className="text-slate-500 text-sm">Standart Qəbul</p>
-                </div>
-                <div className="bg-green-50 border border-green-100 rounded-2xl p-5 text-center flex flex-col justify-center">
-                  <p className="text-xl font-extrabold text-[#00cc66] mb-1">İngilis Bölməsi</p>
-                  <p className="text-slate-500 text-sm">Standart Qəbul</p>
-                </div>
+                </Reveal>
+                <Reveal delay={200} animation="reveal-scale">
+                  <div className="bg-blue-50 border border-blue-100 rounded-2xl p-5 text-center flex flex-col justify-center h-full group hover:border-[#4B4EFC] transition-colors">
+                    <p className="text-xl font-extrabold text-[#4B4EFC] mb-1 group-hover:scale-105 transition-transform">Rus Bölməsi</p>
+                    <p className="text-slate-500 text-sm">Standart Qəbul</p>
+                  </div>
+                </Reveal>
+                <Reveal delay={300} animation="reveal-scale">
+                  <div className="bg-green-50 border border-green-100 rounded-2xl p-5 text-center flex flex-col justify-center h-full group hover:border-[#00cc66] transition-colors">
+                    <p className="text-xl font-extrabold text-[#00cc66] mb-1 group-hover:scale-105 transition-transform">İngilis Bölməsi</p>
+                    <p className="text-slate-500 text-sm">Standart Qəbul</p>
+                  </div>
+                </Reveal>
               </div>
               <p className="text-slate-400 text-xs mt-4">
                 "Valideyn-dövlət-özəl tərəfdaşlığı" layihəsi çərçivəsində Azərbaycan bölməsinə dövlət tərəfindən 70% təhsil dəstəyi (endirim) tətbiq olunur.
