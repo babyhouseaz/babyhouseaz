@@ -22,7 +22,7 @@ export default function EducationDetails() {
           {/* İlkin Savad Təlimi */}
           <Reveal animation="reveal-left" delay={100} className="bg-white rounded-[30px] p-8 shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-[#ff4d85]">
             <div className="relative w-20 h-20 mb-6 rounded-2xl overflow-hidden shadow-md">
-              <Image src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=400&auto=format&fit=crop" alt="İlkin Savad Təlimi" fill className="object-cover" />
+              <Image src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=400&auto=format&fit=crop" alt="İlkin Savad Təlimi" fill className="object-cover" />
             </div>
             <h3 className="text-2xl font-extrabold text-slate-800 mb-5">İlkin Savad Təlimi</h3>
             <ul className="space-y-4 text-slate-600 font-medium">
@@ -50,7 +50,7 @@ export default function EducationDetails() {
           {/* Məntiq və Riyaziyyat */}
           <Reveal animation="reveal-scale" delay={200} className="bg-white rounded-[30px] p-8 shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-[#4B4EFC]">
             <div className="relative w-20 h-20 mb-6 rounded-2xl overflow-hidden shadow-md">
-              <Image src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?q=80&w=400&auto=format&fit=crop" alt="Məntiq və Riyaziyyat" fill className="object-cover" />
+              <Image src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=400&auto=format&fit=crop" alt="Məntiq və Riyaziyyat" fill className="object-cover" />
             </div>
             <h3 className="text-2xl font-extrabold text-slate-800 mb-5">Məntiq və Riyaziyyat</h3>
             <ul className="space-y-4 text-slate-600 font-medium">
@@ -78,7 +78,7 @@ export default function EducationDetails() {
           {/* Musiqi Bölümü */}
           <Reveal animation="reveal-right" delay={300} className="bg-white rounded-[30px] p-8 shadow-xl hover:-translate-y-2 transition-transform duration-300 border-t-4 border-[#00cc66]">
             <div className="relative w-20 h-20 mb-6 rounded-2xl overflow-hidden shadow-md">
-              <Image src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=400&auto=format&fit=crop" alt="Musiqi Bölümü" fill className="object-cover" />
+              <Image src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=400&auto=format&fit=crop" alt="Musiqi Bölümü" fill className="object-cover" />
             </div>
             <h3 className="text-2xl font-extrabold text-slate-800 mb-5">Musiqi Bölümü</h3>
             <ul className="space-y-4 text-slate-600 font-medium">
