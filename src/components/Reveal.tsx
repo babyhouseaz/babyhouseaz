@@ -1,12 +1,12 @@
 "use client";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
   className?: string;
   animation?: "reveal" | "reveal-left" | "reveal-right" | "reveal-scale";
   delay?: number; // ms
-  as?: keyof JSX.IntrinsicElements;
+  as?: React.ElementType;
 }
 
 export default function Reveal({
@@ -15,6 +15,7 @@ export default function Reveal({
   animation = "reveal",
   delay = 0,
   as: Tag = "div",
+  ...rest
 }: Props) {
   const ref = useRef<HTMLElement>(null);
 
@@ -39,8 +40,7 @@ export default function Reveal({
   }, [delay]);
 
   return (
-    // @ts-expect-error – dynamic tag
-    <Tag ref={ref} className={`${animation} ${className}`}>
+    <Tag ref={ref} className={`${animation} ${className}`} {...rest}>
       {children}
     </Tag>
   );
