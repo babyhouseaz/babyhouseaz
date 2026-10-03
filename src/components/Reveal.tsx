@@ -29,7 +29,8 @@ export default function Reveal({
           setTimeout(() => {
             el.classList.add("visible");
           }, delay);
-          observer.unobserve(el);
+        } else {
+          el.classList.remove("visible");
         }
       },
       { threshold: 0.12 }

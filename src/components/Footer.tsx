@@ -43,14 +43,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand — colorful logo */}
           <Reveal delay={100}>
-            <Link href="/" className="bg-white/95 rounded-2xl p-2 inline-block mb-4 hover:scale-105 transition-transform shadow-sm">
-              <Image
-                src="/Logo.png"
-                alt="BabyHouse Logo"
-                width={150}
-                height={75}
-                className="object-contain"
-              />
+            <Link href="/" className="inline-block mb-4 hover:scale-105 transition-transform">
+              <div className="bg-white/95 rounded-full w-[100px] h-[100px] flex items-center justify-center p-2 shadow-sm">
+                <Image
+                  src="/Logo.png"
+                  alt="BabyHouse Logo"
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
             </Link>
             <p className="text-sm leading-relaxed text-slate-400">
               Kiçik addımlar, böyük gələcək. Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük.
