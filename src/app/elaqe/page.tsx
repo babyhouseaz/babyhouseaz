@@ -47,7 +47,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-slate-400 font-bold mb-1">Ünvan</p>
-                      <p className="text-lg font-bold text-slate-800">Cəfər Xəndan küçəsi 20 (və ya 24/2D), Bakı, Azərbaycan</p>
+                      <p className="text-lg font-bold text-slate-800">Cəfər Xəndan küçəsi 2D, Bakı, Azərbaycan</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
