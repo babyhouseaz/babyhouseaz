@@ -33,7 +33,7 @@ export default function FAQ() {
     <section className="py-20 px-4 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <Reveal className="text-center mb-14">
-          <p className="text-[#4B4EFC] font-bold uppercase tracking-wider text-sm mb-2">FAQ</p>
+          <p className="text-[#4B4EFC] font-bold uppercase tracking-wider text-sm mb-2">Sual-Cavab</p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800">
             Tez-Tez Verilən <span className="text-[#ff4d85]">Suallar</span>
           </h2>

@@ -10,22 +10,22 @@ export default function Hero() {
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-[#ffcc00]/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-[#ff4d85]/10 rounded-full blur-2xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="max-w-4xl mx-auto w-full flex flex-col items-center text-center relative z-10">
 
         {/* Text */}
-        <div className="text-white animate-fade-up">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+        <div className="text-white animate-fade-up flex flex-col items-center">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
             BabyHouse <br />
             <span className="text-[#ffcc00]">Uşaq Bağçası</span>
           </h1>
-          <p className="text-xl font-bold text-blue-100 mb-3">
+          <p className="text-xl md:text-2xl font-bold text-blue-100 mb-4">
             Kiçik addımlar, böyük gələcək!
           </p>
-          <p className="text-base text-blue-200 mb-8 max-w-lg leading-relaxed">
+          <p className="text-base md:text-lg text-blue-200 mb-8 max-w-2xl leading-relaxed">
             Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük. Övladlarınızın intellektual
             və fiziki inkişafını dəstəkləyən zəngin fəaliyyətlər ilə dopdolu gün.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/#haqqimizda"
               className="bg-[#ffcc00] hover:bg-yellow-400 text-slate-800 px-8 py-4 rounded-full font-extrabold text-base transition-all hover:scale-105 shadow-lg"
@@ -41,32 +41,17 @@ export default function Hero() {
           </div>
 
           {/* Quick stats */}
-          <div className="flex gap-8 mt-10">
+          <div className="flex justify-center gap-8 mt-12">
             {[
               { val: "08:00", label: "Açılış saatı" },
               { val: "19:00", label: "Bağlanış saatı" },
               { val: "24/7",  label: "Kamera müşahidəsi" },
             ].map((s, i) => (
-              <div key={i}>
+              <div key={i} className="text-center">
                 <p className="text-3xl font-extrabold text-[#ffcc00]">{s.val}</p>
-                <p className="text-blue-200 text-xs mt-1">{s.label}</p>
+                <p className="text-blue-200 text-sm mt-1">{s.label}</p>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Logo / card */}
-        <div className="relative w-full h-[440px] flex justify-center items-center animate-scale-in delay-300">
-          <div className="absolute w-[85%] h-[85%] bg-white/10 rounded-[60%_40%_70%_30%/50%_60%_40%_50%] animate-[spin_25s_linear_infinite]" />
-          <div className="relative z-10 bg-white rounded-3xl p-10 shadow-2xl flex items-center justify-center">
-            <Image
-              src="/Logo.png"
-              alt="BabyHouse Uşaq Bağçası"
-              width={320}
-              height={200}
-              className="object-contain"
-              priority
-            />
           </div>
         </div>
 

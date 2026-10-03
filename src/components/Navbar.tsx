@@ -22,7 +22,6 @@ export default function Navbar() {
           <Link href="/#haqqimizda" className="hover:text-[#4B4EFC] transition-colors">Haqqımızda</Link>
           <Link href="/#xidmetler"  className="hover:text-[#4B4EFC] transition-colors">Xidmətlər</Link>
           <Link href="/#tedris"     className="hover:text-[#4B4EFC] transition-colors">Tədris Proqramı</Link>
-          <Link href="/#video"      className="hover:text-[#4B4EFC] transition-colors">Video</Link>
           <Link href="/elaqe"      className="hover:text-[#4B4EFC] transition-colors">Əlaqə</Link>
         </nav>
 

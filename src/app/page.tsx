@@ -16,7 +16,6 @@ export default function Home() {
       <Hero />
       <Programs />
       <About />
-      <VideoSection />
       <Stats />
       <Teachers />
       <Testimonials />

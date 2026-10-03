@@ -37,11 +37,10 @@ export default function Teachers() {
               className="bg-slate-50 rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition-transform duration-300 border border-slate-100"
             >
               <div
-                className="w-full h-56 flex flex-col items-center justify-center gap-2"
+                className="w-full h-40 flex flex-col items-center justify-center"
                 style={{ backgroundColor: member.color + "15", borderBottom: `4px solid ${member.color}` }}
               >
                 <div style={{ color: member.color }}>{member.icon}</div>
-                <span className="text-xs text-slate-400 font-medium mt-1">Foto əlavə ediləcək</span>
               </div>
               <div className="p-5 text-center">
                 <h3 className="text-lg font-extrabold text-slate-800">{member.role}</h3>
