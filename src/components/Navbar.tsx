@@ -27,12 +27,12 @@ export default function Navbar() {
         }`}
       >
         <div
-          className={`max-w-7xl mx-auto backdrop-blur rounded-full px-6 flex justify-between items-center transition-all duration-300 ${
-            scrolled ? "bg-white/95 py-1.5 shadow-md" : "bg-white/80 py-3 shadow-sm"
+          className={`max-w-4xl mx-auto backdrop-blur rounded-full px-5 flex justify-between items-center transition-all duration-300 ${
+            scrolled ? "bg-white/95 py-1.5 shadow-md" : "bg-white/80 py-2.5 shadow-sm"
           }`}
         >
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 z-50 group">
+          <a href="/" className="flex items-center gap-3 z-50 group">
             <Image
               src="/Logo.png"
               alt="BabyHouse Logo"
@@ -41,7 +41,7 @@ export default function Navbar() {
               className="object-contain transition-transform group-hover:scale-105"
               priority
             />
-            <span className="md:hidden font-extrabold text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#4B4EFC] to-[#ff4d85]">
+            <span className="md:hidden font-extrabold text-[22px] mt-1 bg-clip-text text-transparent bg-gradient-to-r from-[#4B4EFC] to-[#ff4d85]">
               Baby House
             </span>
           </a>

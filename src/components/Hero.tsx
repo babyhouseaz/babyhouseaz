@@ -59,7 +59,7 @@ export default function Hero() {
         <Reveal animation="reveal-right" className="hidden lg:flex justify-end relative h-[500px] w-full">
           <div className="relative w-full h-full rounded-[40px] overflow-hidden border-8 border-white/20 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
              <Image 
-                src="https://i.ibb.co/zHFk3xVY/1b745bc55b29.jpg" 
+                src="/Photo5.jpeg" 
                 alt="BabyHouse Uşaq Bağçası" 
                 fill 
                 className="object-cover"
