@@ -5,9 +5,12 @@ import "./globals.css";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BabyHouse Uşaq Bağçası – Kiçik addımlar, böyük gələcək!",
+  title: "BabyHouse",
   description:
     "Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük. BabyHouse olaraq məqsədimiz övladlarınızın həm sevgi, qayğı və diqqətlə əhatə olunduğu bir mühitdə böyüməsini təmin etməkdir.",
+  icons: {
+    icon: "/Logo.png",
+  },
 };
 
 export default function RootLayout({

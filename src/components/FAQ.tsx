@@ -27,7 +27,7 @@ const faqs = [
 import Reveal from "./Reveal";
 
 export default function FAQ() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
     <section className="py-20 px-4 bg-slate-50">
@@ -48,7 +48,7 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex justify-between items-center px-6 py-5 text-left font-bold text-slate-800 hover:text-[#4B4EFC] transition-colors"
+                className="w-full flex justify-between items-center px-6 py-5 text-left font-bold text-slate-800 hover:text-[#4B4EFC] transition-colors focus:outline-none"
               >
                 <span className="pr-4">{item.q}</span>
                 <span
@@ -59,11 +59,18 @@ export default function FAQ() {
                   +
                 </span>
               </button>
-              {open === i && (
-                <div className="px-6 pb-5 text-slate-600 leading-relaxed text-sm border-t border-slate-50 pt-3">
-                  {item.a}
+              
+              <div 
+                className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${
+                  open === i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <div className="px-6 pb-5 text-slate-600 leading-relaxed text-sm border-t border-slate-50 pt-3">
+                    {item.a}
+                  </div>
                 </div>
-              )}
+              </div>
             </Reveal>
           ))}
         </div>

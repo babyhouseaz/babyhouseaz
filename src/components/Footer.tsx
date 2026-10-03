@@ -43,13 +43,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand — colorful logo */}
           <Reveal delay={100}>
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" className="bg-white/95 rounded-2xl p-2 inline-block mb-4 hover:scale-105 transition-transform shadow-sm">
               <Image
                 src="/Logo.png"
                 alt="BabyHouse Logo"
                 width={150}
                 height={75}
-                className="object-contain brightness-0 invert opacity-90"
+                className="object-contain"
               />
             </Link>
             <p className="text-sm leading-relaxed text-slate-400">
