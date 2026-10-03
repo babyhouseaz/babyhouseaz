@@ -1,4 +1,6 @@
 import Navbar from "@/components/Navbar";
+import EducationDetails from "@/components/EducationDetails";
+import ExtraServices from "@/components/ExtraServices";
 import Hero from "@/components/Hero";
 import Programs from "@/components/Programs";
 import About from "@/components/About";
@@ -14,9 +16,11 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <Programs />
-      <About />
       <Stats />
+      <EducationDetails />
+      <Programs />
+      <ExtraServices />
+      <About />
       <Teachers />
       <Testimonials />
       <FAQ />

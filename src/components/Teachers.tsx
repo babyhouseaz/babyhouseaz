@@ -6,7 +6,7 @@ export default function Teachers() {
     {
       role: "Baş Müəllim",
       color: "#4B4EFC",
-      image: "/Bas.jpeg",
+      image: "/Bash.jpeg",
     },
     {
       role: "Loqoped",

@@ -24,7 +24,7 @@ export default function Stats() {
               </p>
               <p className="text-[#ff4d85] font-bold text-sm mb-6 flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                Qeyd: Bütün bölmələrdə (Azərbaycan və Rus) əlavə olaraq xüsusi metodika ilə İngilis dili tədris olunur.
+                Qeyd: İngilis dili bütün bölmələrdə xüsusi metodika ilə tədris edilir.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -48,22 +48,6 @@ export default function Stats() {
                   </a>
                 </Reveal>
                 <Reveal delay={200} animation="reveal-scale">
-                  <a href="https://wa.me/994553776710?text=Salam,%20Rus%20B%C3%B6lm%C9%99si%20il%C9%99%20ba%C4%9Fl%C4%B1%20qeydiyyatdan%20ke%C3%A7m%C9%99k%20ist%C9%99yir%C9%99m." target="_blank" rel="noopener noreferrer" className="block h-full">
-                    <div className="bg-blue-50 border border-blue-100 rounded-2xl p-5 text-center flex flex-col justify-center h-full group hover:border-[#4B4EFC] transition-colors">
-                      <div className="mx-auto text-[#4B4EFC] mb-3 group-hover:scale-125 transition-transform duration-300">
-                        <svg className="w-12 h-12" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-                        </svg>
-                      </div>
-                      <p className="text-xl font-extrabold text-[#4B4EFC] mb-1 group-hover:scale-105 transition-transform">Rus Bölməsi</p>
-                      <p className="text-slate-500 text-sm mb-4">Standart Qəbul</p>
-                      <div className="bg-[#4B4EFC] text-white text-sm font-bold py-2 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors mx-auto w-max">
-                        Qeydiyyatdan Keç
-                      </div>
-                    </div>
-                  </a>
-                </Reveal>
-                <Reveal delay={300} animation="reveal-scale">
                   <a href="https://wa.me/994553776710?text=Salam,%20%C4%B0ngilis%20B%C3%B6lm%C9%99si%20il%C9%99%20ba%C4%9Fl%C4%B1%20qeydiyyatdan%20ke%C3%A7m%C9%99k%20ist%C9%99yir%C9%99m." target="_blank" rel="noopener noreferrer" className="block h-full">
                     <div className="bg-green-50 border border-green-100 rounded-2xl p-5 text-center flex flex-col justify-center h-full group hover:border-[#00cc66] transition-colors">
                       <div className="mx-auto text-[#00cc66] mb-3 group-hover:scale-125 transition-transform duration-300">
@@ -79,6 +63,22 @@ export default function Stats() {
                     </div>
                   </a>
                 </Reveal>
+                <Reveal delay={300} animation="reveal-scale">
+                  <a href="https://wa.me/994553776710?text=Salam,%20Rus%20B%C3%B6lm%C9%99si%20il%C9%99%20ba%C4%9Fl%C4%B1%20qeydiyyatdan%20ke%C3%A7m%C9%99k%20ist%C9%99yir%C9%99m." target="_blank" rel="noopener noreferrer" className="block h-full">
+                    <div className="bg-blue-50 border border-blue-100 rounded-2xl p-5 text-center flex flex-col justify-center h-full group hover:border-[#4B4EFC] transition-colors">
+                      <div className="mx-auto text-[#4B4EFC] mb-3 group-hover:scale-125 transition-transform duration-300">
+                        <svg className="w-12 h-12" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                        </svg>
+                      </div>
+                      <p className="text-xl font-extrabold text-[#4B4EFC] mb-1 group-hover:scale-105 transition-transform">Rus Bölməsi</p>
+                      <p className="text-slate-500 text-sm mb-4">Standart Qəbul</p>
+                      <div className="bg-[#4B4EFC] text-white text-sm font-bold py-2 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors mx-auto w-max">
+                        Qeydiyyatdan Keç
+                      </div>
+                    </div>
+                  </a>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Stats() {
         <Reveal animation="reveal-scale" className="bg-[#4B4EFC] rounded-[40px] p-10 md:p-14 grid grid-cols-2 md:grid-cols-4 gap-8 text-center shadow-2xl">
           {[
             { end: 15, suffix: "+", label: "Peşəkar Müəllim" },
-            { end: 500, suffix: "+", label: "Xoşbəxt Uşaq" },
+            { end: 0, suffix: "", label: "Xoşagəlməz Hal" },
             { end: 24, suffix: "/7", label: "Kamera Nəzarəti" },
             { end: 5, suffix: "x", label: "Günlük Qidalanma" },
           ].map((s, i) => (

@@ -52,6 +52,7 @@ export default function Navbar() {
           {/* Desktop Links */}
           <nav className="hidden md:flex gap-6 font-extrabold text-slate-700 text-base items-center">
             <Link href="/#haqqimizda" className="hover:text-[#4B4EFC] transition-colors">Haqqımızda</Link>
+            <Link href="/#dernekler" className="hover:text-[#4B4EFC] transition-colors">Dərnəklər</Link>
             <Link href="/#xidmetler" className="hover:text-[#4B4EFC] transition-colors">Xidmətlər</Link>
             <Link href="/#tedris" className="hover:text-[#4B4EFC] transition-colors">Tədris Proqramı</Link>
             <div className="w-px h-5 bg-slate-300 mx-0.5"></div>
@@ -93,6 +94,7 @@ export default function Navbar() {
       >
         <nav className="flex flex-col gap-8 text-center font-extrabold text-slate-800 text-3xl mb-12">
           <Link href="/#haqqimizda" onClick={() => setMenuOpen(false)}>Haqqımızda</Link>
+          <Link href="/#dernekler" onClick={() => setMenuOpen(false)}>Dərnəklər</Link>
           <Link href="/#xidmetler" onClick={() => setMenuOpen(false)}>Xidmətlər</Link>
           <Link href="/#tedris" onClick={() => setMenuOpen(false)}>Tədris Proqramı</Link>
           <Link href="/elaqe" onClick={() => setMenuOpen(false)}>Əlaqə</Link>
