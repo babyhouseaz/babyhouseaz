@@ -54,7 +54,6 @@ export default function Navbar() {
             <Link href="/#haqqimizda" className="hover:text-[#4B4EFC] transition-colors">Haqqımızda</Link>
             <Link href="/#xidmetler" className="hover:text-[#4B4EFC] transition-colors">Xidmətlər</Link>
             <Link href="/#tedris" className="hover:text-[#4B4EFC] transition-colors">Tədris Proqramı</Link>
-            <Link href="/elaqe" className="hover:text-[#4B4EFC] transition-colors">Əlaqə</Link>
             <div className="w-px h-5 bg-slate-300 mx-0.5"></div>
             <a href="https://www.instagram.com/babyhouse_az/" target="_blank" rel="noopener noreferrer" className="text-[#ff4d85] hover:scale-110 transition-transform">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
