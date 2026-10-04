@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function DerneklerPage() {
   const allClubs = [
     { title: "Şahmat", desc: "Uşaqların diqqətini artırmaq və düzgün qərar verməyi öyrənməsi üçün əyləncəli şahmat dərsləri.", image: "/Sahmat.jpeg", color: "#4B4EFC" },
-    { title: "Montessori", desc: "Uşaqların sərbəst şəkildə kəşf edərək və toxunaraq öyrənməsini dəstəkləyən xüsusi metodika.", image: "", color: "#ff4d85" },
+    { title: "Montessori", desc: "Uşaqların sərbəst şəkildə kəşf edərək və toxunaraq öyrənməsini dəstəkləyən xüsusi metodika.", image: "/m.jpeg", color: "#ff4d85" },
     { title: "Musiqi", desc: "Mahnı oxumaq və ritm tutmaqla uşaqların musiqi duyğusunu inkişaf etdiririk.", image: "/Music.jpeg", color: "#00cc66" },
     { title: "Təsviri sənət", desc: "Rəsm çəkmək və əl işləri vasitəsilə uşaqların yaradıcılığını və xəyal gücünü ortaya çıxarırıq.", image: "/Resim.jpeg", color: "#f59e0b" },
     { title: "Xarici dil dərsləri", desc: "Oyunlarla və əyləncəli metodlarla ingilis və rus dili öyrədirik.", image: "/English.jpeg", color: "#8b5cf6" },
