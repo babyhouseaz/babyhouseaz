@@ -6,7 +6,7 @@ export default function Teachers() {
     {
       role: "Baş Müəllim",
       color: "#4B4EFC",
-      image: "",
+      image: "/Bash.jpeg",
     },
     {
       role: "Loqoped",
@@ -21,7 +21,7 @@ export default function Teachers() {
     {
       role: "Dayə",
       color: "#ffcc00",
-      image: "",
+      image: "/DayeS.jpeg",
     },
   ];
 

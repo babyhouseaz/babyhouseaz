@@ -13,7 +13,7 @@ export default function ExtraServices() {
       title: "Elektron Sınaqlar və İmtahana Hazırlıq",
       desc: "Uşaqların biliklərini daim yoxlamaq və məktəbə hazırlamaq üçün xüsusi elektron imtahan mərkəzimiz fəaliyyət göstərir. Uşaqlar kiçik yaşlarından onlayn testlərlə işləyərək, həm rəqəmsal vərdişlərə yiyələnir, həm də gələcək məktəb qəbul imtahanlarına (1-ci sinif qəbulu) tam sərbəst şəkildə hazırlaşırlar.",
       color: "#ff4d85",
-      image: ""
+      image: "/Elektron.jpeg"
     },
     {
       title: "Qidalanma və Tibbi Nəzarət",
