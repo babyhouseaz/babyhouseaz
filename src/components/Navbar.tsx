@@ -35,7 +35,7 @@ export default function Navbar() {
           }`}
         >
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 z-50 group">
+          <Link href="/" className="flex items-center gap-2 z-50 group">
             <Image
               src="/Logo.png"
               alt="BabyHouse Logo"
@@ -47,7 +47,7 @@ export default function Navbar() {
             <span className={`md:hidden font-extrabold text-[22px] mt-1 tracking-tight ${fredoka.className}`}>
               <span className="text-[#4B4EFC]">Baby</span> <span className="text-[#ff4d85]">House</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Links */}
           <nav className="hidden md:flex gap-6 font-extrabold text-slate-700 text-base items-center">

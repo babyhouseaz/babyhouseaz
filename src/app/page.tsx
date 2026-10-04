@@ -4,7 +4,6 @@ import ExtraServices from "@/components/ExtraServices";
 import Hero from "@/components/Hero";
 import Programs from "@/components/Programs";
 import About from "@/components/About";
-import VideoSection from "@/components/VideoSection";
 import Stats from "@/components/Stats";
 import Teachers from "@/components/Teachers";
 import Testimonials from "@/components/Testimonials";
