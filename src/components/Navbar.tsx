@@ -45,7 +45,7 @@ export default function Navbar() {
               priority
             />
             <span className={`md:hidden font-extrabold text-[22px] mt-1 tracking-tight ${fredoka.className}`}>
-              <span className="text-[#4B4EFC]">Baby</span><span className="text-[#ff4d85]">House</span>
+              <span className="text-[#4B4EFC]">Baby</span> <span className="text-[#ff4d85]">House</span>
             </span>
           </a>
 

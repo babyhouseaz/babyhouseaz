@@ -18,10 +18,6 @@ const faqs = [
     q: "Xüsusi qayğıya ehtiyacı olan uşaqlar üçün xidmət varmı?",
     a: "Bəli. Bağçamızda peşəkar loqoped, defektoloq və psixoloq xidməti mövcuddur. Xüsusi ehtiyacı olan uşaqlar üçün fərdi inkişaf və korreksiya proqramı tətbiq edilir.",
   },
-  {
-    q: "Servis xidməti mövcuddurmu?",
-    a: "Bəli. Uşaqların bağçaya təhlükəsiz gediş-gəlişini təmin edən xüsusi nəqliyyat xidmətimiz mövcuddur.",
-  },
 ];
 
 import Reveal from "./Reveal";

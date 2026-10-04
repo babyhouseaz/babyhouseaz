@@ -39,11 +39,11 @@ export default function About() {
           <Reveal animation="reveal-right">
             <p className="text-[#ff4d85] font-bold uppercase tracking-wider text-sm mb-4">Haqqımızda</p>
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800 mb-6 leading-tight">
-              Sevgi ilə Böyüyən, <br />
-              <span className="text-[#4B4EFC]">İnkişaf Edən Mühit</span>
+              Övladınızın <br />
+              <span className="text-[#4B4EFC]">İkinci Evi</span>
             </h2>
             <p className="text-slate-600 mb-8 leading-relaxed text-lg">
-              <strong>BabyHouse</strong> olaraq məqsədimiz, övladlarınızın həm sevgi, qayğı
+              <strong>Baby House</strong> olaraq məqsədimiz, övladlarınızın həm sevgi, qayğı
               və diqqətlə əhatə olunduğu bir mühitdə böyüməsi, həm də onların intellektual
               və fiziki inkişafını dəstəkləyən zəngin fəaliyyətlərdə iştirak etməsini
               təmin etməkdir.

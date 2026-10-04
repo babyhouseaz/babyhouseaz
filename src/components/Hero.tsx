@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="text-center lg:text-left z-10 relative">
           <Reveal animation="reveal-left">
             <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold mb-4 leading-tight text-white">
-              BabyHouse <br />
+              Baby House <br />
               <span className="text-[#ffcc00]">Uşaq Bağçası</span>
             </h1>
           </Reveal>

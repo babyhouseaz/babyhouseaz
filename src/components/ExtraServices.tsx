@@ -5,15 +5,15 @@ export default function ExtraServices() {
   const services = [
     {
       title: "Psixoloji və Loqoped Dəstəyi",
-      desc: "Uşaqların bağçaya, cəmiyyətə və məktəbə psixoloji adaptasiyası tam diqqət mərkəzindədir. İmtahan həyəcanının idarə olunması, xarakter formalaşması və inkişaf dinamikası mütəxəssislər tərəfindən izlənilir. Həmçinin, peşəkar loqoped xidmətimiz vasitəsilə uşaqlarda yarana biləcək nitq qüsurları, tələffüz problemləri və kəkələmə kimi hallar erkən yaşda aşkarlanır və xüsusi terapiyalarla tam aradan qaldırılır.",
+      desc: "Uşaqların bağçaya, cəmiyyətə və məktəbə psixoloji adaptasiyası tam diqqət mərkəzindədir. Həmçinin, peşəkar loqoped xidmətimiz vasitəsilə uşaqlarda yarana biləcək nitq qüsurları, tələffüz problemləri və kəkələmə kimi hallar erkən yaşda aşkarlanır və xüsusi terapiyalarla tam aradan qaldırılır.",
       color: "#4B4EFC",
       image: "/Psix.jpeg"
     },
     {
       title: "Elektron Sınaqlar və İmtahana Hazırlıq",
-      desc: "Uşaqların biliklərini daim yoxlamaq və məktəbə hazırlamaq üçün xüsusi elektron imtahan mərkəzimiz fəaliyyət göstərir. Uşaqlar kiçik yaşlarından onlayn testlərlə işləyərək, həm rəqəmsal vərdişlərə yiyələnir, həm də gələcək məktəb qəbul imtahanlarına (1-ci sinif qəbulu) psixoloji və intellektual olaraq tam sərbəst şəkildə, həyəcansız hazırlaşırlar.",
+      desc: "Uşaqların biliklərini daim yoxlamaq və məktəbə hazırlamaq üçün xüsusi elektron imtahan mərkəzimiz fəaliyyət göstərir. Uşaqlar kiçik yaşlarından onlayn testlərlə işləyərək, həm rəqəmsal vərdişlərə yiyələnir, həm də gələcək məktəb qəbul imtahanlarına (1-ci sinif qəbulu) tam sərbəst şəkildə hazırlaşırlar.",
       color: "#ff4d85",
-      image: "/About1.jpeg"
+      image: ""
     },
     {
       title: "Qidalanma və Tibbi Nəzarət",
@@ -33,22 +33,21 @@ export default function ExtraServices() {
     <section id="xidmetler" className="py-24 px-4 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <Reveal className="text-center mb-16">
-          <p className="text-[#00cc66] font-bold uppercase tracking-wider text-sm mb-2">Əlavə Xidmətlər</p>
+          <p className="text-[#00cc66] font-bold uppercase tracking-wider text-sm mb-2">Bağça Xidmətləri</p>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-800">
             Tədrisi Dəstəkləyən Xidmətlərimiz
           </h2>
-          <p className="text-slate-500 mt-4 max-w-3xl mx-auto text-lg leading-relaxed">
-            Hər bir uşağın həm fiziki, həm psixoloji, həm də intellektual sağlamlığını ən yüksək səviyyədə qoruyuruq.
-          </p>
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {services.map((s, i) => (
             <Reveal key={i} delay={i * 100} animation="reveal-scale" className="h-full">
               <div className="bg-slate-50 rounded-[40px] p-6 sm:p-8 border-t-4 shadow-md hover:shadow-2xl transition-all h-full flex flex-col group" style={{ borderColor: s.color }}>
-                <div className="relative w-full h-64 sm:h-80 mb-8 rounded-3xl overflow-hidden bg-slate-200">
-                  <Image src={s.image} alt={s.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                </div>
+                {s.image && (
+                  <div className="relative w-full h-64 sm:h-80 mb-8 rounded-3xl overflow-hidden bg-slate-200">
+                    <Image src={s.image} alt={s.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                  </div>
+                )}
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-800 mb-4">{s.title}</h3>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed flex-grow">{s.desc}</p>
               </div>
