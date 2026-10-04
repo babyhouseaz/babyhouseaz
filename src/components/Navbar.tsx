@@ -35,7 +35,16 @@ export default function Navbar() {
           }`}
         >
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 z-50 group">
+          <Link 
+            href="/" 
+            className="flex items-center gap-2 z-50 group"
+            onClick={(e) => {
+              if (window.location.pathname === '/') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }}
+          >
             <Image
               src="/Logo.png"
               alt="BabyHouse Logo"
