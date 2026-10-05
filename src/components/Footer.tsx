@@ -55,7 +55,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm leading-relaxed text-slate-400">
-              Kiçik addımlar, böyük gələcək. Sevgi dolu mühitdə xoşbəxt uşaqlar böyüdürük.
+              Övladınızın sağlam, xoşbəxt və intellektual inkişafını sevgi dolu mühitdə təmin edən peşəkar uşaq bağçası.
             </p>
           </Reveal>
 
